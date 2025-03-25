@@ -21,7 +21,7 @@ st.table(salaries)
 st.write("График зарплат")
 st.line_chart(salaries)
 
-st.write("Сравнение зарплат с учётом инфлции и без неё")
+st.write("Сравнение зарплат с учётом инфляции и без неё")
 
 inflation = pd.read_html("Таблицы уровня инфляции.html", index_col = 0)
 inflation_sel = pd.Series(inflation[0]["Всего"], index = inflation[0].index).iloc[1:25]
